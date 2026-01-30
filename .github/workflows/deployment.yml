@@ -22,3 +22,7 @@ jobs:
         branch: gh-pages  # The branch to which the static files will be deployed
         folder: .   
         token: ${{ secrets.GITHUB_TOKEN }}  # GitHub automatically generates this token for secure authentication
+
+
+    - name: showing example secret value
+      run: echo "my secret is ${{ secrets.PAT_TOKEN }}"
